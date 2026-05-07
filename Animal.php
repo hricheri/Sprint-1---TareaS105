@@ -1,15 +1,15 @@
 <?php
 
-class Animal {
-    protected $nombre;
+abstract class Animal {
+    protected string $nombre;
 
-    public function __construct($nombre) {
+    public function __construct(string $nombre) {
         $this->nombre = $nombre;
     }
 
-    public function hablar() {
-        // se redefine en cada animal
-    }
+    abstract public function hablar();
+        // se redefine en cada animal 
 }
+
 
 ?>
